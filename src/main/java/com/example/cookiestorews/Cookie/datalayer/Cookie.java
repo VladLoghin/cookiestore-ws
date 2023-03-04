@@ -3,7 +3,11 @@ package com.example.cookiestorews.Cookie.datalayer;
 import com.example.cookiestorews.Cookie.Inventory.datalayer.InventoryIdentifier;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @Entity
 @Table(name="Cookie")
 @Data
