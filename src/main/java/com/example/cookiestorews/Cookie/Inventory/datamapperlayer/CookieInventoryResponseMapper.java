@@ -12,6 +12,6 @@ import java.util.List;
 public interface CookieInventoryResponseMapper {
 
     @Mapping(expression = "java(inventory.getInventoryIdentifier().getInventory_id())", target = "inventory_id")
-    @Mapping(expression = "java(cookies)", target = "availablecookies")
+    @Mapping(expression = "java(cookies)", target = "availableCookies")
     CookieInventoryResponseModel entitiesToResponseModel(Inventory inventory, List<CookieResponseModel> cookies);
 }
