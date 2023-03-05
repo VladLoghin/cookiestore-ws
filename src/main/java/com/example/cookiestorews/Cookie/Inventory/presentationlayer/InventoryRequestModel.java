@@ -1,5 +1,10 @@
 package com.example.cookiestorews.Cookie.Inventory.presentationlayer;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class InventoryRequestModel {
 
     String stock_type;

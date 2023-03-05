@@ -7,17 +7,17 @@ import java.util.Objects;
 public class Price {
 
 
-    private Float cost;
+    public Double cost;
 
 
     Price(){
 
     }
 
-    public Price(@NotNull Float cost){
+    public Price(@NotNull Double cost){
         Objects.requireNonNull(this.cost = cost);
     }
 
-    public @NotNull Float getCost(){return cost;}
+    public @NotNull Double getCost(){return cost;}
 
 }

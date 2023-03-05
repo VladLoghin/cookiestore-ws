@@ -16,7 +16,7 @@ public interface CookieRequestMapper {
             @Mapping(target = "id", ignore = true),
             @Mapping(expression = "java(cookieIdentifier)", target = "cookieIdentifier"),
             @Mapping(expression = "java(inventoryIdentifier)", target = "inventoryIdentifier"),
-            @Mapping(expression = "java(Price)", target = "price"),
+            @Mapping(expression = "java(price.cost)", target = "price"),
     })
     Cookie requestModelToEntity(CookieRequestModel cookieRequestModel, CookieIdentifier cookieIdentifier, InventoryIdentifier inventoryIdentifier, Price price);
 }

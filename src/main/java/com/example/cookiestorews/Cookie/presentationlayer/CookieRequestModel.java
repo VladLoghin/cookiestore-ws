@@ -14,5 +14,5 @@ public class CookieRequestModel {
     private String cookie_name;
     private Integer quantity;
     private String cookie_size;
-    private Float price;
+    private Double price;
 }
